@@ -1,0 +1,134 @@
+/*
+
+Theme Name: Elexia Naturals
+Theme URI: http://theme.co/x/
+Author: Jade
+Author URI: https://www.jadealombro.com/
+Description: This is a child theme of X which is customized for Elexia Naturals.
+Version: 1.0.0
+Template: x
+
+*/
+
+.x-btn.home-intro {
+  	border: 0;
+  	padding: 0;
+}
+
+.x-header-landmark {
+    background: #f8f7f7 url(images/landmark.jpg) no-repeat center center;
+    background-size: cover;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.term-elexia-baby .x-header-landmark {
+    background: #b5dbdc url(images/elexia-baby-bg.jpg) repeat;
+    background-size: contain;
+}
+
+.woocommerce-ordering select {
+    background-image: url(images/dropdown.png);
+    background-repeat: no-repeat;
+    background-position: right 15px top 50%;
+}
+
+.big-quote {
+    position: relative;;
+}
+
+.big-quote:before,
+.big-quote:after {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: bottom left !important;
+}
+
+.big-quote:before {
+    left: -50px;
+    top: -20px;
+    background: url(images/quote.png);
+}
+
+.big-quote:after {
+    background: url(images/quote-end.png);
+    right: 0;
+    bottom: 0;
+}
+
+.x-colophon.above-top {
+    background: #f8f7f7 url(images/above-footer-bg.jpg) no-repeat center bottom;
+    background-size: cover;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    border-top: 0;
+    box-shadow: none;
+}
+
+.x-colophon.above-top .widget {
+    margin-top: 0;
+    text-align: center;
+}
+
+.x-colophon.bottom .x-colophon-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+.a-top {
+    top: 0;
+}
+
+.a-bottom {
+    bottom: 0;
+}
+
+.a-left {
+    left: 0;
+}
+
+.a-right {
+    right: 0;
+}
+
+
+.elexia-hero-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.elexia-hero-section img {
+    opacity: 1;
+    transform: scale(1);
+
+    transition: all 0.75s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+body:not(.loaded) .elexia-hero-section img {
+    opacity: 0;
+    transform: scale(1.25);
+}
+
+.home .elexia-hero-section img:first-child {
+    opacity: 0;
+    transform: scale(0.85) translateY(30px);
+    transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+.home .elexia-hero-section img:first-child.show {
+    opacity: 1;
+    transform: scale(1) translateY(30px);
+}
