@@ -132,3 +132,35 @@ body:not(.loaded) .elexia-hero-section img {
     opacity: 1;
     transform: scale(1) translateY(30px);
 }
+
+#x-nav-wrap-mobile {
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.x-navbar .mobile .x-nav {
+    margin: 0;
+}
+
+.x-navbar .x-nav-wrap .x-nav > li:first-child > a {
+    border-top: 0;
+}
+
+.x-navbar .x-nav-wrap .x-nav > li:last-child > a {
+    border-bottom: 0;
+}
+
+.x-navbar .mobile .x-nav>li.x-menu-item-woocommerce>a {
+    border-top: 0;
+    margin-top: 0;
+}
+
+
+.home .masthead {
+    position: absolute;
+    width: 100%;
+}
+
+@media (max-width: 480px) {
+
+}
